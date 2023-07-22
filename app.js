@@ -128,7 +128,9 @@ app.delete('/product/:productId', async (req, res) => {
   }
 });
 
-
+app.get('/', (req, res) => {
+  res.send('¡Hola mundo!');
+});
 
 
 // Agrega aquí tus demás rutas y lógica del servidor según tus necesidades
