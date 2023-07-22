@@ -8,7 +8,7 @@ dotenv.config();
 
 // Configuración del servidor Express
 const app = express();
-const port = 3000; // Puedes cambiar el puerto si es necesario
+const port = process.env.PORT || 3000;
 app.use(cors());
 
 app.use(cors({
